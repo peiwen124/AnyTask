@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.celine.anytask.Homepage">
+
+    <item
+        android:id="@+id/action_sort"
+        android:orderInCategory="4"
+        android:title="@string/action_sort"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_add_circle_white_48dp"
+        android:title="@string/action_add"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_face_black_48dp"
+        android:title="@string/login_button"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/item_search"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_search_white_48dp"
+        android:title="@string/action_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView">
+
+    </item>
+</menu>

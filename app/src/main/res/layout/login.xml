@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:weightSum="1"
+              android:background="#232322">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="188dp"
+        android:layout_height="192dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/anytask_icon"/>
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="28dp"
+        android:id="@+id/textView1"
+        android:text="@string/username_text"
+        android:textColor="#ffffff"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/TFusername"
+        android:layout_width="320dp"
+        android:layout_height="43dp"
+        android:textColor="@color/colorAccent"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="28dp"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:text="@string/password_text"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="43dp"
+        android:id="@+id/TFpassword"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/BLogin"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="166dp"
+            android:layout_height="57dp"
+            android:onClick="onButtonClick"
+            android:text="@string/login_button"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/BSignUp"
+            style="@android:style/Widget.Material.Button.Borderless.Colored"
+            android:layout_width="166dp"
+            android:layout_height="57dp"
+            android:onClick="onButtonClick"
+            android:text="@string/signup_button"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
